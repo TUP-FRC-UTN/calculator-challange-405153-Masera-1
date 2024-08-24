@@ -1,0 +1,14 @@
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculadora{
+    width: 12rem;
+    background-color: #e9e4e4;
+    border:  solid 1px black;
+    padding: 20px;
+    text-align: center;
+}

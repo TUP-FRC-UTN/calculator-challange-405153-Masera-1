@@ -1,0 +1,21 @@
+
+<div>
+    <label for="valor1"> Valor 1</label>
+    <input type="number" id="valor1" 
+    placeholder="Ingrese el primer valor"
+    (input)="pasarValor($event, 0)">
+</div>
+
+<div>
+    <label for="valor2">Valor 2</label>
+    <input type="number" id="valor2" 
+    placeholder="Ingrese el segundo valor"
+    (input)="pasarValor($event, 1)">
+</div>
+
+<div>
+    <label for="resultado">Resultado</label>
+    <input type="text" readonly id="resultado" [value]="result">
+</div>
+
+<app-calculator-keyboard [numeros]="valores" (resultado)="llenarResultado($event)" (limpiarEntrada)="limpiarUltimo()"/>
